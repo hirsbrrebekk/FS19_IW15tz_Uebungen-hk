@@ -1,4 +1,7 @@
 body {
-  background-color: coral;
   color: black;
+  font-family: 'Abel'
+}
+.card.mb-3 {
+	background-color: coral;
 }
