@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <title>DGUI Lesson 5 Formulare</title>
         <meta name="description" content="html5 Forms">
-        <meta name="author" content="Ihr Name">
+        <meta name="author" content="Rebekka Hirsbrunner">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -19,13 +19,26 @@
             <h1>HTML Formular</h1>
             <hr>
             <form>
-              <!-- https://getbootstrap.com/docs/4.3/components/forms/#form-controls -->
-              <!-- http://html5pattern.com/Dates -->
-              <!-- https://www.w3schools.com/howto/howto_css_inline_form.asp -->
+                <div class="form-group">
+                    <label for="inputDate">Datum</label>
+                    <input type="date" class="form-control" id="date" placeholder=" DD.MM.YYYY" required pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}">
+                <div class="form-group">
+                    <label for="selectOrt">Ort</label>
+                    <select class="form-control" id="place" required>
+                        <option selected>Auswählen...</option>
+                        <option>Basel</option>
+                        <option>Bern</option>
+                        <option>Chur</option>
+                        <option>Olten</option>
+                        <option>Zürich</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button id="send" type="submit" class="btn btn-primary" onclick="senden();" >Senden</button>
+                </div>
             </form>
         </div>
-        <script type="text/javascript">
-        </script>
+        <script src="script.js"></script>
     </body>
 
 </html>
