@@ -12,7 +12,7 @@ body {
   margin-top: 20vh;
 }
 
-.sendbutton {
+#sendbutton {
   margin: 3em auto;
 }
 
@@ -48,3 +48,6 @@ a.navbar-brand {
   color: #4a4f4a;
 }
 
+.btn {
+  width: 150px;
+}
