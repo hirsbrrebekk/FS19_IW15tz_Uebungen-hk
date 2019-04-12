@@ -11,3 +11,8 @@ function klickZaehler() {
 	document.getElementById("result").innerHTML = "Sorry, leider unterstützt dein Brower diese Funktion nicht.";
 }
 }
+
+function clearZaehler(){
+	localStorage.clickcount=0;
+	document.getElementById("result").innerHTML = localStorage.clickcount;
+}
